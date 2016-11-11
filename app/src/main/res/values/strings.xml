@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StaurtApp</string>
+    <string name="restaurant_id">Restaurant ID</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="userName">User Name</string>
+    <string name="restaurantCompanyID">Restaurant Company ID</string>
+    <string name="title_activity_order_food_activty">OrderFoodActivty</string>
+    <string name="progress_dialog">Authenticating</string>
+</resources>

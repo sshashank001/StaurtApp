@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login" >
+  <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingTop="24dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+           >
+
+            <EditText
+                android:id="@+id/et_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginTop="80dp"
+                android:text="ishwar"
+                android:background="@drawable/edittextbg"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:hint="@string/userName" />
+
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/edittextbg"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:hint="@string/password"
+                android:text="ishwar"
+                android:inputType="textPassword" />
+
+
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="12dp"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>
